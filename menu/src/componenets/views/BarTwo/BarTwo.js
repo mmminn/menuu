@@ -2,6 +2,7 @@ import { Button, Dropdown, Space } from 'antd'
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import MyPage from './MyPage';
+import PageThree from '../PageThree/PageThree';
 
 const buttonStyle = {
   width: '15%',
@@ -17,7 +18,7 @@ const items = [
   {
     key: '1',
     label: (
-      <a target="_blank" rel="noopener noreferrer" href="../">
+      <a target="_blank" rel="noopener noreferrer" href='../PageThree' >
         메인메뉴
       </a>
     ),
@@ -47,6 +48,10 @@ const BarTwo = () => {
     navigate('/Two')
   }
 
+  function handleUseHistory2() {
+    navigate('/Three')
+  }
+
   return (
     <div style={{
       backgroundColor: 'white',
@@ -54,10 +59,10 @@ const BarTwo = () => {
       height: '50px',
     }}>
       <Button
-      style={buttonStyle}
-      onClick={handleUseHistory}
+        style={buttonStyle}
+        onClick={handleUseHistory}
       >공지사항</Button>
-      <Dropdown menu={{items}}><Button style={buttonStyle}>메뉴소개</Button></Dropdown>
+      <Dropdown menu={{ items }}><Button onClick={handleUseHistory2} style={buttonStyle}>메뉴소개</Button></Dropdown>
       <Button style={buttonStyle}>매장조회</Button>
       <MyPage></MyPage>
     </div>

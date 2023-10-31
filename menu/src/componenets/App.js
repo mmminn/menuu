@@ -1,9 +1,8 @@
 import Footer from "./views/Footer/Footer";
 import Main from "./views/Main/Main";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Top from "./views/Top/Top";
-import BarTwo from "./views/BarTwo/BarTwo";
 import PageTwo from "./views/PageTwo/PageTwo";
+import PageThree from "./views/PageThree/PageThree";
 
 function App() {
   return (
@@ -15,6 +14,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/Two" element={<PageTwo />} />
+            <Route path="/Three" element={<PageThree />} />
           </Routes>
         </Router>
       </div>
