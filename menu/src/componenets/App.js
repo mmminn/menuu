@@ -3,6 +3,8 @@ import Main from "./views/Main/Main";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PageTwo from "./views/PageTwo/PageTwo";
 import PageThree from "./views/PageThree/PageThree";
+import PageFour from "./views/PageFour/PageFour";
+import MenuDetail from "./views/PageThree/Detail/MenuDetail";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
             <Route path="/" element={<Main />} />
             <Route path="/Two" element={<PageTwo />} />
             <Route path="/Three" element={<PageThree />} />
+            <Route path="/Menu" element={<MenuDetail />} />
+            <Route path="/Four" element={<PageFour />} />
           </Routes>
         </Router>
       </div>

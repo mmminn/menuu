@@ -39,6 +39,14 @@ const items = [
       </a>
     ),
   },
+  {
+    key: '4',
+    label: (
+      <a target="_blank" rel="noopener noreferrer" href="../">
+        음료/주류
+      </a>
+    ),
+  },
 ];
 
 const BarTwo = () => {
@@ -52,6 +60,10 @@ const BarTwo = () => {
     navigate('/Three')
   }
 
+  function handleUseHistory3() {
+    navigate('/Four')
+  }
+
   return (
     <div style={{
       backgroundColor: 'white',
@@ -63,7 +75,7 @@ const BarTwo = () => {
         onClick={handleUseHistory}
       >공지사항</Button>
       <Dropdown menu={{ items }}><Button onClick={handleUseHistory2} style={buttonStyle}>메뉴소개</Button></Dropdown>
-      <Button style={buttonStyle}>매장조회</Button>
+      <Button onClick={handleUseHistory3} style={buttonStyle}>매장조회</Button>
       <MyPage></MyPage>
     </div>
   )
