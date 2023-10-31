@@ -9,7 +9,7 @@ const AntCard = () => {
               <Card
                 hoverable
                 style={{
-                  width: '100%',
+                  width: '200px',
                 }}
                 cover={
                   <img

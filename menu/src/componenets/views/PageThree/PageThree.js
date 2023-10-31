@@ -7,15 +7,15 @@ import ContentRight from './ContentRight'
 
 const PageThree = () => {
   return (
-<div>
-        <Top></Top>
-        <BarTwo></BarTwo>
-        <NavBar></NavBar>
-        <div style={{ overflow: 'hidden' }}>
-            <ContentLeft></ContentLeft>
-            <ContentRight></ContentRight>
-          </div>
-</div>
+    <div>
+      <Top></Top>
+      <BarTwo></BarTwo>
+      <NavBar></NavBar>
+      <div style={{ overflow: 'hidden' }}>
+        <ContentLeft></ContentLeft>
+        <ContentRight></ContentRight>
+      </div>
+    </div>
   )
 }
 

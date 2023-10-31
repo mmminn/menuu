@@ -1,19 +1,17 @@
 import React from 'react'
-import AntCard from './AntCard'
-import { Row } from 'antd'
+import { Divider } from 'antd'
+import MenuList from './MenuList';
 
 const ContentRight = () => {
   return (
     <div style={{
       backgroundColor: 'white',
       height: '1000px',
-      width: '50%',
+      width: '60%',
       float: 'right',
     }}>
-      <Row gutter={[10, 10]} style={{ marginTop: '20px' }}>
-        <AntCard></AntCard>
-      </Row>
-
+      <Divider orientation="Center">메뉴 목록</Divider>
+      <MenuList></MenuList>
     </div>
   )
 }
